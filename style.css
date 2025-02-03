@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    user-select: none;
+}
+
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /* vízszintes igazítás középre flex megjelenítésnél */
+    align-items: center; /*  függőleges igazítás középre flex megjelenítésnél */
+    height: 100vh; /*  függőleges igazítás középre flex megjelenítésnél */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; /* a kártyák 10px-nyi távolságra lesznek egymástól */
+}
+
+.card {
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #F8F9FA;
+    box-shadow: 0px 4px 6px rgb(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #343A40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: ease 0.5s; /* a hover-ben lévő transzformálást belassítjuk, hogy 0.5 másodperc alatt menjen végbe */
+    color: white;
+}
+
+.red {
+    background-color: #DC3545; 
+}
+
+.red:hover {
+    transform: scale(1.1) /* felnagyítja az elemet 10%-al */
+}
+
+.green {
+    background-color: #28A745;
+}
+
+.green:hover {
+    transform: scale(1.1)
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.result-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #DC3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.muvelet {
+    background-color: #DC3545;
+    color: white;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: ease 0.5s; /* belassít bármiféle változást a gombon úgy, hogy az fél másodperc alatt menjen végbe */
+    border: none;
+}
+
+.muvelet:hover {
+    transform: scale(1.1); /* 10%-al nagyobb lesz a gomb mérete, ha rámutatok */
+}
