@@ -63,3 +63,7 @@ Array.from(muveletek).forEach(muvelet => {
         eredmeny.textContent = c;
     });
 });
+
+
+
+//Osama Bin Laden
